@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  front:
+    image: node:18
+    ports:
+      - 3000:3000
+    volumes:
+      - ./front:/usr/src
+    depends_on:
+      - back
+    command: bash -c "cd /usr/src && npm run dev"
+
+  back:
+    image: denoland/deno:1.32.1
+    ports:
+      - 8080:8080
+    volumes:
+      - ./back:/usr/src
+    command: bash -c "cd /usr/src && deno run --allow-net --allow-read --allow-env --unstable main.ts"

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="botones">
+
+        <input type="textfield" name="valores" value="" autocomplete="off" readonly id="textNumeros" />
+        <div class="organizarBotones">
+            <td><button onclick="ponerNumerosTextField(7)" id="numeroSiete">7</button></td>
+            <td><button onclick="ponerNumerosTextField(8)" id="numeroOcho">8</button></td>
+            <td><button onclick="ponerNumerosTextField(9)" id="numeroNueve">9</button></td>
+            <td><button onclick="" id="letraC">C</button></td>
+        </div>
+
+        <div class="organizarBotones">
+            <button onclick="ponerNumerosTextField(4)" id="numeroCuatro">4</button></td>
+            <button onclick="ponerNumerosTextField(5)" id="numeroCinco">5</button></td>
+            <button onclick="ponerNumerosTextField(6)" id="numeroSeis">6</button></td>
+            <button onclick="seleccionSignoOperativo('-')" id="signoMenos">-</button></td>
+        </div>
+
+        <div class="organizarBotones">
+            <button onclick="ponerNumerosTextField(1)" id="numeroUno">1</button>
+            <button onclick="ponerNumerosTextField(2)" id="numeroDos">2</button>
+            <button onclick="ponerNumerosTextField(3)" id="numeroTres">3</button>
+            <button onclick="seleccionSignoOperativo('+')" id="signoMas">+</button>
+        </div>
+
+        <div class="organizarBotones">
+            <button onclick="seleccionSignoOperativo('/')" id="signoDividir">/</button>
+            <button onclick="ponerNumerosTextField(0)" id="numeroCero">0</button>
+            <button onclick="seleccionSignoOperativo('*')" id="signoMultiplicar">X</button>
+            <button onclick="sumarDosValores()" id="signoIgual">=</button>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

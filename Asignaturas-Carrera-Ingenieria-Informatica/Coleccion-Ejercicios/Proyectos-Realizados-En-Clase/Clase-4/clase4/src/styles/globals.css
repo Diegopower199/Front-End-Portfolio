@@ -1,0 +1,27 @@
+body {
+  background: #f0f0f5;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.persona {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  text-decoration-line: underline;
+  background-color: chocolate;
+}
+.menu {
+  display: flex;
+  flex: auto;
+  align-content: center;
+  background-color: cadetblue;
+  font-size: 20px;
+}

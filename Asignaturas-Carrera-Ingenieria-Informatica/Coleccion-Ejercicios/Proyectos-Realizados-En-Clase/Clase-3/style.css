@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(176, 176, 176);
+  background-color: rgb(48, 48, 48);
+}
+
+button {
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#results {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.posicionarBotones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+}
+
+#nombreBuscar {
+  width: 200px;
+}
+
+.divBusqueda {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+}

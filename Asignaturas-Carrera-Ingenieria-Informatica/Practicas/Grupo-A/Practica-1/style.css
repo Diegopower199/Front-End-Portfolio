@@ -1,0 +1,111 @@
+.chat-web {
+  display: flex;
+  height: 100vh;
+}
+
+.lista-contactos {
+  width: 20%;
+  background-color: lightgray;
+  overflow-y: scroll;
+}
+
+.lista-contactos h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.lista-contactos ul {
+  margin: 0;
+  padding: 0;
+}
+
+.lista-contactos li {
+  padding: 10px;
+  border-bottom: 3px solid gray;
+  cursor: pointer;
+}
+
+.lista-contactos button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #357d14;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat {
+  width: 80%;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.chat h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.mensajes {
+  padding: 10px;
+  font-size: 17px;
+}
+
+.mensaje {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.mensaje.izq {
+  justify-content: flex-start;
+}
+
+.mensaje.der {
+  justify-content: flex-end;
+}
+
+.mensaje.der p {
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+  background: #9bc986;
+}
+
+.mensaje.izq p {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.input-boton {
+  display: flex;
+  padding: 10px;
+  border-top: 4px solid gray;
+  position: absolute;
+  bottom: 0;
+  width: 77%;
+  margin: 10px 10px 10px 10px;
+}
+
+.input-boton input {
+  flex-grow: 1;
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.input-boton button {
+  background-color: #357d14;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+}

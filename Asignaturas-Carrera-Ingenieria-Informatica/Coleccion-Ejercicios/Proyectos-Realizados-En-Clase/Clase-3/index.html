@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="main.js"></script>
+    <title>Mi tercera pagina</title>
+  </head>
+  <body onload="fetchChars(pagina)">
+    <div class="divBusqueda">
+      <p>
+        Nombre personaje
+        <input type="text" name="Buscar nombre" id="nombreBuscar" />
+      </p>
+      <button onclick="findCharacterName()">Busqueda</button>
+    </div>
+
+    <div id="results"></div>
+
+    <div class="posicionarBotones">
+      <button onclick="changePageBack()" id="botonBack">Back</button>
+      <button onclick="changePageNext()" id="botonNext">Next</button>
+    </div>
+  </body>
+</html>

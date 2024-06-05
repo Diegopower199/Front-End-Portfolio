@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mensaje">
+      <h1>Space Invaders</h1>
+      <p>
+        Para jugar debes utilizar tecla flecha a la izquierda y tecla a la
+        derecha. y S y el espacio para disparar <br />
+        Disfruta!!!!!
+      </p>
+    </div>
+
+    <div class="wrap">
+      <audio id="musica" autoplay loop>
+        <source src="music/feed-the-machine-classic-arcade-game-116846.mp3" />
+      </audio>
+
+      <header>Space Invaders</header>
+      <div class="game-wrapper">
+        <div class="main"></div>
+        <div class="lose">
+          <h1>GAME OVER</h1>
+          <h2>Better luck next time!</h2>
+          <button class="btn" onclick="resetGame()">Restart</button>
+        </div>
+        <div class="win">
+          <h1>YOU WIN!</h1>
+          <h2>Winner winner chicken dinner!</h2>
+          <button class="btn" onclick="resetGame()">Restart</button>
+        </div>
+
+        <p class="textoScore">Score:</p>
+        <div id="score">0</div>
+      </div>
+      <script src="main.js"></script>
+      <footer></footer>
+    </div>
+  </body>
+</html>

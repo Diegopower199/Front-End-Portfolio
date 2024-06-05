@@ -1,0 +1,1 @@
+API Rick And Morty server and client side rendering 

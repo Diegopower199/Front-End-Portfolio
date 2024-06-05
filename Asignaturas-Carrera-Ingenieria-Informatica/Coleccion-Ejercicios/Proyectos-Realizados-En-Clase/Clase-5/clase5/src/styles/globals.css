@@ -1,0 +1,48 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 19px;
+  padding: 0;
+}
+
+.nombre {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px;
+}
+
+.apellido {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px;
+}
+
+.edad {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px;
+}
+
+.email {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px;
+}
+
+.boton {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}

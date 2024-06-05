@@ -1,0 +1,21 @@
+body {
+  background-color: aliceblue;
+  color: blue;
+  height: 100%;
+}
+
+button {
+  background-color: #ffffff;
+}
+
+.circulo {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}

@@ -1,0 +1,35 @@
+version: '2.7'
+
+services:
+  front: 
+    image: node:18
+    ports: 
+      - 3000:3000
+    volumes:
+      - ./front:/user/src
+    depends_on:
+      - back
+    command: bash -c "cd /user/src && npm run dev"
+
+  back:
+    image: denoland/deno:1.32.1
+    ports:
+      - 7777:7777
+    volumes:
+      - ./back:/user/src
+    environment:
+      - MONGO_URL=mongodb://mongo/WordList
+    depends_on:
+      - mongo
+    command: bash -c "cd /user/src && deno run --allow-all src/main.ts"
+
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./mongo:/data/db
+    
