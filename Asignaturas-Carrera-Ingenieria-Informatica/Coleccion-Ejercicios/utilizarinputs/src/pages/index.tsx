@@ -24,8 +24,8 @@ export default function Home() {
       >
         <input
           type="text"
-          onChange={(e) => {
-            setTexto(e.target.value);
+          onChange={(event) => {
+            setTexto(event.target.value);
           }}
         ></input>
       </div>
@@ -41,8 +41,8 @@ export default function Home() {
       >
         <input
           type="date"
-          onChange={(e) => {
-            setFecha(e.target.value);
+          onChange={(event) => {
+            setFecha(event.target.value);
           }}
         ></input>
       </div>
@@ -58,8 +58,8 @@ export default function Home() {
       >
         <input
           type="time"
-          onChange={(e) => {
-            setHora(e.target.value);
+          onChange={(event) => {
+            setHora(event.target.value);
           }}
         ></input>
       </div>
@@ -73,7 +73,7 @@ export default function Home() {
           margin: "20px",
         }}
       >
-        <button onClick={(e) => {}}>DALE AL BOTON</button>
+        <button onClick={(event) => {}}>DALE AL BOTON</button>
         <br />
         El valor de texto es: {texto}
         <br />
@@ -98,8 +98,8 @@ export default function Home() {
       >
         <select
           value={valueSelect}
-          onChange={(e) => {
-            setValueSelect(e.target.value);
+          onChange={(event) => {
+            setValueSelect(event.target.value);
           }}
         >
           <option value="primera opcion">primera opcion</option>
@@ -122,8 +122,8 @@ export default function Home() {
         <input
           type="checkbox"
           checked={isChecked}
-          onChange={(e) => {
-            setIsChecked(e.target.checked);
+          onChange={(event) => {
+            setIsChecked(event.target.checked);
           }}
         />
         <p>Estado del checkbox: {isChecked ? "Marcado" : "Desmarcado"}</p>
@@ -143,8 +143,8 @@ export default function Home() {
             type="radio"
             value="opcion1"
             checked={selectedOption === "opcion1"}
-            onChange={(e) => {
-              setSelectedOption(e.target.value);
+            onChange={(event) => {
+              setSelectedOption(event.target.value);
             }}
           />
           Opción 1
@@ -154,8 +154,8 @@ export default function Home() {
             type="radio"
             value="opcion2"
             checked={selectedOption === "opcion2"}
-            onChange={(e) => {
-              setSelectedOption(e.target.value);
+            onChange={(event) => {
+              setSelectedOption(event.target.value);
             }}
           />
           Opción 2
@@ -165,8 +165,8 @@ export default function Home() {
             type="radio"
             value="opcion3"
             checked={selectedOption === "opcion3"}
-            onChange={(e) => {
-              setSelectedOption(e.target.value);
+            onChange={(event) => {
+              setSelectedOption(event.target.value);
             }}
           />
           Opción 3
@@ -185,8 +185,8 @@ export default function Home() {
       >
         <textarea
           value={textValue}
-          onChange={(e) => {
-            setTextValue(e.target.value);
+          onChange={(event) => {
+            setTextValue(event.target.value);
           }}
         />
         <p>Texto ingresado: {textValue}</p>
@@ -206,8 +206,8 @@ export default function Home() {
           min="0"
           max="100"
           value={rangeValue}
-          onChange={(e) => {
-            setRangeValue(Number(e.target.value));
+          onChange={(event) => {
+            setRangeValue(Number(event.target.value));
           }}
         />
         <p>Valor del rango: {rangeValue}</p>
