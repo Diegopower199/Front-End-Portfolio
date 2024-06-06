@@ -38,7 +38,7 @@
       }
 
       function changeButton2 () {
-          var button2 = document.getElementById("button2");
+        let button2 = document.getElementById("button2");
           button2.innerText = "Pulsado";
           button2.style.background = "#ff00aa"
           button2.style.position = "absolute";
@@ -47,24 +47,24 @@
       }
 
       function moveDown() {
-          var pelota = document.getElementById("pelota");
-          var top = parseInt(pelota.style.top) || 2;
+        let pelota = document.getElementById("pelota");
+        let top = parseInt(pelota.style.top) || 2;
           if (pelota.style.top !== screen.height) {
               pelota.style.top = (top + 50) + "px";
           }
       }
 
       function moveUp() {
-          var pelota = document.getElementById("pelota");
-          var top = parseInt(pelota.style.top) ;
+        let pelota = document.getElementById("pelota");
+        let top = parseInt(pelota.style.top) ;
           if (top !== 0 ) {
               pelota.style.top = (top - 50) + "px";
           }
       }
 
       function moveRight() {
-          var pelota = document.getElementById("pelota");
-          var left = parseInt(pelota.style.left) || 0 ;
+        let pelota = document.getElementById("pelota");
+        let left = parseInt(pelota.style.left) || 0 ;
 
           if (pelota.style.left !== screen.width) {
               pelota.style.left = (left + 50) + "px";
@@ -72,8 +72,8 @@
       }
 
       function moveLeft() {
-          var pelota = document.getElementById("pelota");
-          var left = parseInt(pelota.style.left) || 0;
+        let pelota = document.getElementById("pelota");
+        let left = parseInt(pelota.style.left) || 0;
           if (left !== 0) {
               pelota.style.left = (left - 50) + "px";
           }
@@ -81,8 +81,8 @@
 
 
       function move() {
-          var pelota = document.getElementById("pelota");
-          var top = parseInt(pelota.style.top) || 2;
+        let pelota = document.getElementById("pelota");
+        let top = parseInt(pelota.style.top) || 2;
           pelota.style.top = (2 + top) + "px";
           setTimeout(move, 50);
       }

@@ -1,6 +1,6 @@
-var pagina = 1;
-var paginaEncontradaNombre = 1;
-var buscarNombre = false;
+let pagina = 1;
+let paginaEncontradaNombre = 1;
+let buscarNombre = false;
 
 function fetchChars() {
   buscarNombre = false;
@@ -22,12 +22,12 @@ function fetchChars() {
   fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}`)
     .then((data) => data.json())
     .then((chars) => {
-      var container = document.getElementById("results");
+      let container = document.getElementById("results");
       container.innerHTML = "";
 
-      var contadorDiv = 0;
+      let contadorDiv = 0;
       chars.results.forEach((char) => {
-        var div = document.createElement("div");
+        let div = document.createElement("div");
         div.style.width = 300;
         div.style.height = 360;
         div.style.margin = 20 + "px";
@@ -61,7 +61,7 @@ function findCharacterName() {
     document.getElementById("botonNext").style.display = "flex";
   }
 
-  var name = document.getElementById("nombreBuscar");
+  let name = document.getElementById("nombreBuscar");
   if (name.value === undefined || name.value === "") {
     pagina = 1;
     fetchChars();
@@ -73,12 +73,12 @@ function findCharacterName() {
   )
     .then((data) => data.json())
     .then((chars) => {
-      var container = document.getElementById("results");
+      let container = document.getElementById("results");
       container.innerHTML = "";
 
-      var contadorDiv = 0;
+      let contadorDiv = 0;
       chars.results.forEach((char) => {
-        var div = document.createElement("div");
+        let div = document.createElement("div");
         div.style.width = 300;
         div.style.height = 360;
         div.style.margin = 20 + "px";

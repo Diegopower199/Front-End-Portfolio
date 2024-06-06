@@ -1,6 +1,6 @@
-var signo = "";
-var numeroAntesDelSigno;
-var numeroDespuesDelSigno;
+let signo = "";
+let numeroAntesDelSigno;
+let numeroDespuesDelSigno;
 
 function ponerNumerosTextField(numero) {
   document.getElementById("textNumeros").value += numero;

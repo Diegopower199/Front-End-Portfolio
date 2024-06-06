@@ -71,8 +71,8 @@ function updateEnemies($container) {
   const enemies = STATE.enemies;
   for (let i = 0; i < enemies.length; i++) {
     const enemy = enemies[i];
-    var a = enemy.x + dx;
-    var b = enemy.y + dy;
+    let a = enemy.x + dx;
+    let b = enemy.y + dy;
     setPosition(enemy.$enemy, a, b);
     enemy.cooldown = Math.random(0, 100);
     if (enemy.enemy_cooldown == 0) {
@@ -230,10 +230,10 @@ function update() {
 }
 
 function createEnemies($container) {
-  for (var i = 0; i <= STATE.number_of_enemies / 2; i++) {
+  for (let i = 0; i <= STATE.number_of_enemies / 2; i++) {
     createEnemy($container, i * 80, 100);
   }
-  for (var i = 0; i <= STATE.number_of_enemies / 2; i++) {
+  for (let i = 0; i <= STATE.number_of_enemies / 2; i++) {
     createEnemy($container, i * 80, 180);
   }
 }
